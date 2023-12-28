@@ -140,10 +140,13 @@
         "error",
         {
           "quoteProps": "consistent",
-          "singleQuote": true,
+          "singleQuote": false,
           "tabWidth": 2,
-          "trailingComma": "es5",
-          "useTabs": false
+          "trailingComma": "all",
+          "useTabs": false,
+          "arrowParens": "avoid",
+          "bracketSameLine": false,
+          "bracketSpacing": true
         }
       ]
     }
@@ -154,10 +157,13 @@
   ],
   "prettier": {
     "quoteProps": "consistent",
-    "singleQuote": true,
+    "singleQuote": false,
     "tabWidth": 2,
-    "trailingComma": "es5",
-    "useTabs": false
+    "trailingComma": "all",
+    "useTabs": false,
+    "arrowParens": "avoid",
+    "bracketSameLine": false,
+    "bracketSpacing": true
   },
   "react-native-builder-bob": {
     "source": "src",
