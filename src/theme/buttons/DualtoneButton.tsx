@@ -4,7 +4,7 @@ import { Text } from "../texts/Text";
 import { Center, View } from "../views/View";
 import { ABSOLUTE_STYLE } from "../responsive";
 
-export default function DualtoneView({
+export default function DualtoneButton({
   width,
   height,
   colors,

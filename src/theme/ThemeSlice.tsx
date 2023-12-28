@@ -1,6 +1,6 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { useDispatch, useSelector } from 'react-redux';
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { useDispatch, useSelector } from "react-redux";
 
 type Props = {
   dark: boolean;
@@ -13,21 +13,21 @@ const initialState: Props = {
 };
 
 export const asyncInitTheme: any = createAsyncThunk(
-  'asyncInitTheme',
+  "asyncInitTheme",
   async () => {
-    const dark = await AsyncStorage.getItem('dark');
+    const dark = await AsyncStorage.getItem("dark");
     return Boolean(dark);
   },
 );
 
-const ThemeSlice = createSlice({
-  name: 'ThemeSlice',
+export const ThemeSlice = createSlice({
+  name: "ThemeSlice",
   initialState,
   reducers: {
     setDark: (state, { payload }) => {
       state.dark = payload;
       console.log(payload);
-      AsyncStorage.setItem('dark', String(payload));
+      AsyncStorage.setItem("dark", String(payload));
     },
   },
   extraReducers: builder => {
@@ -44,8 +44,6 @@ const ThemeSlice = createSlice({
       });
   },
 });
-
-export default ThemeSlice;
 
 const actions = ThemeSlice.actions;
 
