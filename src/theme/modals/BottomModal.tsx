@@ -1,6 +1,6 @@
 import React from "react";
 import { Pressable } from "react-native";
-import { View, type ViewProps } from "src/theme/views/View";
+import { View, type ViewProps } from "../views/View";
 import useTheme from "../useTheme";
 import BlurView from "../views/BlurView";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Text } from "src/theme/texts/Text";
-import { View, type ViewProps } from "src/theme/views/View";
+import { View, type ViewProps } from "../views/View";
 import FloatTextInput, { type FloatTextInputProps } from "./FloatTextInput";
 
 export type FormikInputProps = FloatTextInputProps & {

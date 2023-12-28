@@ -1,6 +1,6 @@
 import React from "react";
-import { View, type ViewProps } from "src/theme/views/View";
 import { ABSOLUTE_STYLE } from "../responsive";
+import { View, type ViewProps } from "./View";
 
 export type BlurViewProps = {
   children: React.ReactNode;

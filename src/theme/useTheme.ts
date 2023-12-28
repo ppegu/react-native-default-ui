@@ -21,7 +21,7 @@ const theme = {
     disabled: "#6d6d6d",
   },
   fonts: fontWeights,
-  fontSizes: fontSizes,
+  fontSizes,
 };
 
 export type AppColors = typeof theme.colors;

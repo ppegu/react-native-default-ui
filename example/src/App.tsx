@@ -1,6 +1,7 @@
-import * as React from 'react';
+import * as React from "react";
+import { StyleSheet } from "react-native";
 
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from "react-native-default-ui";
 
 export default function App() {
   const [result] = React.useState<number | undefined>();
@@ -15,8 +16,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   box: {
     width: 60,

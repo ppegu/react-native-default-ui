@@ -6,7 +6,7 @@ import type {
 } from "react-native-tab-view";
 import { useThemeMode } from "src/theme/ThemeSlice";
 import useTheme from "src/theme/useTheme";
-import { Center, Row, View } from "src/theme/views/View";
+import { Center, Row, View } from "../views/View";
 import { Text } from "../texts/Text";
 
 export default function TabviewTabbar(
