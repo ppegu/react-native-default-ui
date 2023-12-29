@@ -1,5 +1,12 @@
 export { default as StatusBar } from "./Statusbar";
-export { ThemeSlice, asyncInitTheme, useThemeMode } from "./ThemeSlice";
+
+export {
+  default as ThemeProvider,
+  type ThemeContextValue,
+  type ThemeProviderProps,
+} from "./ThemeProvider";
+export * from "./useTheme";
+
 export { Button, DualtoneButton, IconButton } from "./buttons";
 export type { ButtonProps, IconButtonProps } from "./buttons";
 export * from "./fonts";
@@ -17,6 +24,5 @@ export {
 
 export { default as TabviewTabbar } from "./tabview/TabviewTabbar";
 export * from "./views";
-export * from "./useTheme";
 export * from "./texts/Text";
 export * from "./responsive";

@@ -4,19 +4,16 @@ import type {
   NavigationState,
   SceneRendererProps,
 } from "react-native-tab-view";
-import { useThemeMode } from "../ThemeSlice";
+import { Text } from "../texts/Text";
 import useTheme from "../useTheme";
 import { Center, Row, View } from "../views/View";
-import { Text } from "../texts/Text";
 
 export default function TabviewTabbar(
   props: SceneRendererProps & { navigationState: NavigationState<any> },
 ) {
   const routes = props.navigationState.routes;
 
-  const { colors } = useTheme();
-
-  const { dark } = useThemeMode();
+  const { colors, dark } = useTheme();
 
   return (
     <View>

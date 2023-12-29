@@ -1,33 +1,33 @@
-import { fontSizes, fontWeights } from "./fonts";
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeProvider";
+import type { DEFAULT_COLORS } from "./default";
+import { DEFAULT_FONTSIZES } from "./fonts";
 
-const theme = {
-  colors: {
-    text: "#fff",
-    primary: "#fff",
-    secondary: "#1d1c1d",
-    error: "#bc0c0c",
-    success: "#419311",
-    bottomBackground: "#5f1038",
-    search: "#484247",
-    red: "#f32b2e",
-    green: "#419311",
-    violet: "#8000FF",
-    background1: "#08040d",
-    background2: "#231a2d",
-    border: "#fff",
-    button: "#4a29a9",
-    buttonText: "#fff",
-    bottombar: "#5f1038",
-    disabled: "#6d6d6d",
-  },
-  fonts: fontWeights,
-  fontSizes,
+export type AppColors = typeof DEFAULT_COLORS;
+
+export type AppFonts = {
+  thin: {
+    fontFamily: string | undefined;
+  };
+  regular: {
+    fontFamily: string | undefined;
+  };
+  semiBold: {
+    fontFamily: string | undefined;
+  };
+  bold: {
+    fontFamily: string | undefined;
+  };
+
+  extraBold: {
+    fontFamily: string | undefined;
+  };
 };
 
-export type AppColors = typeof theme.colors;
-export type AppFonts = typeof theme.fonts;
-export type AppFontSizes = typeof theme.fontSizes;
+export type AppFontSizes = typeof DEFAULT_FONTSIZES;
 
 export default function useTheme() {
+  const theme = useContext(ThemeContext);
+
   return theme;
 }
