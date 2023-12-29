@@ -4,8 +4,8 @@ import type {
   NavigationState,
   SceneRendererProps,
 } from "react-native-tab-view";
-import { useThemeMode } from "src/theme/ThemeSlice";
-import useTheme from "src/theme/useTheme";
+import { useThemeMode } from "../ThemeSlice";
+import useTheme from "../useTheme";
 import { Center, Row, View } from "../views/View";
 import { Text } from "../texts/Text";
 

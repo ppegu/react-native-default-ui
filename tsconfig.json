@@ -24,7 +24,6 @@
     "strict": true,
     "target": "esnext",
     "verbatimModuleSyntax": true,
-    "baseUrl": "./",
     "typeRoots": ["node_modules/@types", "@types"]
   }
 }

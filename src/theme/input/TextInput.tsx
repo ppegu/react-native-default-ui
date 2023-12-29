@@ -3,7 +3,7 @@ import {
   TextInput as DefaultTextInput,
   type TextInputProps as DefaultTextInputProps,
 } from "react-native";
-import useTheme from "src/theme/useTheme";
+import useTheme from "../useTheme";
 
 export const INPUT_SIZES = {
   xs: 35,
