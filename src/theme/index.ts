@@ -7,6 +7,8 @@ export {
 } from "./ThemeProvider";
 export * from "./useTheme";
 
+export { default as useTheme } from "./useTheme";
+
 export { Button, DualtoneButton, IconButton } from "./buttons";
 export type { ButtonProps, IconButtonProps } from "./buttons";
 export * from "./fonts";
