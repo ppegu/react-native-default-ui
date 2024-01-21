@@ -20,8 +20,8 @@ export type TextProps = DefaultTextProps &
 
 export function Text({
   children,
-  size,
-  weight,
+  size = "regular",
+  weight = "regular",
   color = "text",
   style,
   ...rest

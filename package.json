@@ -57,15 +57,13 @@
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "*",
-    "@reduxjs/toolkit": "^2.0.1",
     "axios": "*",
     "react-native-linear-gradient": "^2.8.3",
     "react-native-pager-view": "^6.2.3",
     "react-native-responsive-screen": "^1.4.2",
     "react-native-tab-view": "^3.5.2",
     "react-native-vector-icons": "^10.0.3",
-    "react-native-web-linear-gradient": "^1.1.2",
-    "react-redux": "^9.0.4"
+    "react-native-web-linear-gradient": "^1.1.2"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
