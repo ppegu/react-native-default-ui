@@ -15,7 +15,7 @@ export default function BackdropLoading({
   if (!loading) return <></>;
 
   return (
-    <Center {...ABSOLUTE_STYLE}>
+    <Center {...ABSOLUTE_STYLE} zIndex={10}>
       <ActivityIndicator {...rest} />
     </Center>
   );
