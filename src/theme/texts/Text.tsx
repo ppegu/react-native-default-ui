@@ -23,6 +23,7 @@ export function Text({
   size = "regular",
   weight = "regular",
   color = "text",
+  numberOfLines,
   style,
   ...rest
 }: TextProps) {
@@ -41,7 +42,11 @@ export function Text({
   if (!isSmallDevice && fontStyle.fontSize) fontStyle.fontSize += 2;
 
   return (
-    <DefaulText {...rest} style={[fontStyle, style, rest]}>
+    <DefaulText
+      numberOfLines={numberOfLines}
+      {...rest}
+      style={[fontStyle, style, rest]}
+    >
       {children}
     </DefaulText>
   );
