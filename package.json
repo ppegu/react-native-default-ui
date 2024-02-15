@@ -1,6 +1,6 @@
 {
   "name": "react-native-default-ui",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "Use react-native default components in esier way",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
